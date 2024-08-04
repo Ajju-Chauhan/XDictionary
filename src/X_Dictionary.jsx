@@ -25,18 +25,18 @@ function X_Dictionary() {
   };
 
   return (
-    <>
+    <div>
       <h1>Dictionary App</h1>
       <input
         type="text"
         value={query}
         onChange={handleChange}
-        placeholder="Search for a word."
+        placeholder="Type a word..."
       />
       <button onClick={handleSearch}>Search</button>
-      <h2>Definition :</h2>
+      <h2>Definition:</h2>
       <p>{definition}</p>
-    </>
+    </div>
   );
 }
 
